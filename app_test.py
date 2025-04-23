@@ -11,7 +11,7 @@ st.write(f'Hello {name}!')
 ## Range selector
 cols1,_ = st.beta_columns((1,2)) # To make it narrower
 format = 'MMM DD, YYYY'  # format output
-start_date = dt.date(year=2021,month=1,day=1)-relativedelta(years=2)  #  I need some range in the past
+start_date = dt.date(year=2024,month=4,day=1)
 end_date = dt.datetime.now().date()
 max_days = end_date-start_date
 
