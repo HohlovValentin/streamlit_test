@@ -1,14 +1,13 @@
 import streamlit as st
 import pandas as pd
 
-st.title('A Simple Streamlit Web App')
+st.title('Тест простого веб-приложения на базе Streamlit')
 
 name = st.text_input('Введите имя', '')
 
 st.write(f'Hello {name}!')
 
-x = st.slider('Select an integer x', 0, 10, 1)
-y = st.slider('Select an integer y', 0, 10, 1)
+x = st.slider('Выбери дату', '2025-04-01', 23, '2025-04-23')
 
-df = pd.DataFrame({'x': [x], 'y': [y] , 'x + y': [x + y]}, index = ['addition row'])
-st.write(df)
+# df = pd.DataFrame({'x': [x], 'y': [y] , 'x + y': [x + y]}, index = ['addition row'])
+st.write(x)
